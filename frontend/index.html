@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="card">
+        <h1>Secure App</h1>
+        <p class="subtitle">ECI - TDSE</p>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('login')">Login</button>
+            <button class="tab" onclick="showTab('register')">Registro</button>
+        </div>
+
+        <div id="login-section">
+            <input type="text" id="login-username" placeholder="Usuario" />
+            <input type="password" id="login-password" placeholder="Contraseña" />
+            <button class="btn-primary" onclick="login()">Ingresar</button>
+        </div>
+
+        <div id="register-section" style="display:none;">
+            <input type="text" id="reg-username" placeholder="Usuario" />
+            <input type="password" id="reg-password" placeholder="Contraseña" />
+            <button class="btn-primary" onclick="register()">Registrarse</button>
+        </div>
+
+        <p id="status" class="status"></p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
